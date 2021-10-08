@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var login_1 = require("./login");
+var filmes_1 = require("./filmes");
+var login1 = new login_1.codLogin("Wesley", "wesleysouza@brq.com", "4545", []);
+var filme1 = new filmes_1.filme("Titanic", "Um artista pobre e uma jovem rica...", "Leonardo DiCaprio, Kate Winslet", "James Cameron", 2845, "Drama");
+var filme2 = new filmes_1.filme("De Volta Para o Futuro", "Marty McFly, um adolescente...", "Michel J. Fox", "Robert Zemeckis", 4536, "Aventura");
+var filme3 = new filmes_1.filme("Alice no País das Maravilhas", "Ainda garotinha, Alice Kingsleigh...", "Johnny Deep", "Tim Burton", 5899, "Drama");
+console.log("======================INFORMAÇÕES DO USUARIO========================");
+login1.addFavorito(filme1);
+login1.addFavorito(filme2);
+login1.addFavorito(filme3);
+console.log(login1);
